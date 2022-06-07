@@ -11,7 +11,7 @@ func PrintJson(patch string, data interface{}) error {
 		return err
 	}
 
-	f, err := os.OpenFile("data.json", os.O_RDWR|os.O_CREATE, 0755)
+	f, err := os.OpenFile(patch, os.O_RDWR|os.O_CREATE, 0755)
 	if err != nil {
 		return err
 	}
